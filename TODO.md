@@ -61,5 +61,16 @@ There is obviously *a lot* more broken than what is shown, this is just what I w
       - Spotted being used
         at [src/ImGui.NET/Generated/ImFontAtlasCustomRect.gen.cs](src/ImGui.NET/Generated/ImFontAtlasCustomRect.gen.cs)
 
+- Dependency updates
+  - Find a way to update the following, since they're not updated by default
+    - [ ] ImGuizmo.NET
+    - [ ] ImNodes.NET
+    - [ ] ImPlot.NET
+
+- Deprecation/replacement
+  - [ ] Deprecate MonoGame in ImGui.NET.SampleProgram.XNA
+  - [ ] Deprecate Veldrid in ImGui.NET.SampleProgram
+  - [ ] Replace with SDL3 equivalents, including Foster Framework
+
 *there is more red, will update later, need to sleep, it is 03:42 [now 4:17 after more font stuff] at the time of 
 writing and i am severely depressed.*
