@@ -43,7 +43,7 @@ There is obviously *a lot* more broken than what is shown, this is just what I w
       - [ ] `ImFontAtlasBuilderPtr`
         - Spotted being used
           at [src/ImGui.NET/Generated/ImFontAtlas.gen.cs](src/ImGui.NET/Generated/ImFontAtlas.gen.cs)
-      - [] `ImFontAtlasRectId`
+      - [ ] `ImFontAtlasRectId`
         - Spotted being used
           at [src/ImGui.NET/Generated/ImFontAtlas.gen.cs](src/ImGui.NET/Generated/ImFontAtlas.gen.cs)
       - [ ] `ImFontLoader`
