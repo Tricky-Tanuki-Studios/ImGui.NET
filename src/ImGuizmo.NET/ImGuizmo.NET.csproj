@@ -2,16 +2,16 @@
   <PropertyGroup>
     <Description>A .NET wrapper for the ImGuizmo library.</Description>
     <AssemblyVersion>1.61.0</AssemblyVersion>
-    <Authors>Eric Mellino</Authors>
+    <Authors>Eric Mellino, asojidev</Authors>
     <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DebugType>portable</DebugType>
-    <AssemblyName>ImGuizmo.NET</AssemblyName>
-    <PackageId>ImGuizmo.NET</PackageId>
+    <AssemblyName>TrickyTanukiStudios.ImGuizmo.NET</AssemblyName>
+    <PackageId>TrickyTanukiStudios.ImGuizmo.NET</PackageId>
     <PackagePrereleaseIdentifier></PackagePrereleaseIdentifier>
     <PackageVersion>$(AssemblyVersion)$(PackagePrereleaseIdentifier)</PackageVersion>
     <PackageTags>ImGuizmo ImGui ImGui.NET Immediate Mode GUI</PackageTags>
-    <PackageProjectUrl>https://github.com/mellinoe/imgui.net</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Tricky-Tanuki-Studios/ImGui.NET</PackageProjectUrl>
     <DocumentationFile Condition="'$(Configuration)' == 'Release'">$(OutputPath)\ImGuizmo.NET.xml</DocumentationFile>
     <RootNamespace>ImPlotNET</RootNamespace>
   </PropertyGroup>
