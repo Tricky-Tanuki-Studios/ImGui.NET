@@ -1,4 +1,35 @@
-# ImGui.NET
+# TrickyTanukiStudios.ImGui.NET
+
+This is a more up-to-date and maintained version of the original ImGui.NET project, mainly to get it up to date to the latest Dear ImGui version, latest .NET LTS [.NET 10 as of writing] and to be used for Wrenit Engine. 
+Build and development instructions will be soon after it gets into a buildable state, which at the time of writing, it is not yet ready.
+You can view the [incomplete] progress in the [TODO.md](TODO.md) file.
+
+Unfortunately due to how much I break with this fork, and continue to do so, this will not be upstreamed, however I will keep eyeing upstream if it ever changes.
+I do intend on keep this as its own derivative, and work to try to keep it as functional as can be.
+There's also no promise it'll always be on the latest Dear ImGui version, even though that's the point of this fork.
+It'll be updated when I feel like updating it, and wanting to use any of the new features, so it's a coin flip on if I actually update in an adequate time.
+That being said, anything that isn't SDL3-based will probably not be officially supported, this includes MonoGame/XNA/FNA and Veldrid, since I have no personal experience with those frameworks.
+
+Naming wise, this is renamed to `TrickyTanukiStudios.ImGui.NET` to avoid any reasonable conflict with the original library, and it will be used studio-wide.
+Originally, it would've been named `Wrenit.ImGui.NET` but I [asojidev] would like to use it outside of Wrenit Engine as well, even thought this is purposely built for said engine.
+Having this adapted to work with latest Unity and Godot would be nice, but that's more of a wish than anything, this is most definitely not a promise at all.
+
+Once this is in a buildable and workable state, builds can be found at [asojidev's nuget](https://nuget.asoji.gay).
+To add it to your project, add this to your nuget.config [run `dotnet new nugetconfig` in your project if you don't have a `nuget.config` file] inside your `<packagesSources>` block
+
+```xml
+    ...
+    <packageSources>
+        ...
+        <add key="asojidev's nuget" value="https://nuget.asoji.gay/v3/index.json" />
+        ...
+    </packageSources>
+    ...
+```
+
+Alternatively, you can just run `dotnet nuget add source "https://nuget.asoji.gay/v3/index.json" -n "asojidev's nuget"`.
+
+# Original Readme
 
 This is a .NET wrapper for the immediate mode GUI library, Dear ImGui (https://github.com/ocornut/imgui). ImGui.NET lets you build graphical interfaces using a simple immediate-mode style. ImGui.NET is a .NET Standard library, and can be used on all major .NET runtimes and operating systems.
 
