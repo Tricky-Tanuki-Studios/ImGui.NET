@@ -2,43 +2,43 @@ name: CI
 on:
   create: # when tags are created
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 jobs:
   Build_Windows:
     runs-on: windows-latest
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Install .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
+      - name: Install .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
 
-    - name: Restore dependencies
-      run: dotnet restore src
+      - name: Restore dependencies
+        run: dotnet restore src
 
-    - name: Build Project
-      run: dotnet build -c Release --no-restore src
+      - name: Build Project
+        run: dotnet build -c Release --no-restore src
 
-    - name: Build Packages
-      run: dotnet pack ImGui.NET -c Release --no-restore --no-build
+      - name: Build Packages
+        run: dotnet pack TrickyTanukiStudios.ImGui.NET -c Release --no-restore --no-build
 
-    - name: List Packages
-      run: ls -l bin\Release\ImGui.NET\
+      - name: List Packages
+        run: ls -l bin\Release\TrickyTanukiStudios.ImGui.NET\
 
-    - name: Validate Generated Code
-      if: false # startsWith(github.ref, 'refs/tags/')
-      shell: bash
-      run: |
-        echo "Running CodeGenerator"
-        bin/Release/CodeGenerator/net8.0/CodeGenerator.exe "ImGui.NET/Generated"
-        git status -s | findstr . && echo "ERROR: CodeGenerator is not executed, please execute it." && exit 1 || exit 0
+      - name: Validate Generated Code
+        if: false # startsWith(github.ref, 'refs/tags/')
+        shell: bash
+        run: |
+          echo "Running CodeGenerator"
+          bin/Release/CodeGenerator/net8.0/CodeGenerator.exe "TrickyTanukiStudios.ImGui.NET/Generated"
+          git status -s | findstr . && echo "ERROR: CodeGenerator is not executed, please execute it." && exit 1 || exit 0
 
-    - name: Publish to nuget.org
-      if: startsWith(github.ref, 'refs/tags/')
-      run: dotnet nuget push bin\Release\ImGui.NET\*.nupkg -s https://api.nuget.org/v3/index.json --api-key ${{secrets.ASOJIDEV_NUGET_KEY}}
+      - name: Publish to nuget.org
+        if: startsWith(github.ref, 'refs/tags/')
+        run: dotnet nuget push bin\Release\TrickyTanukiStudios.ImGui.NET\*.nupkg -s https://nuget.asoji.gay/v3/index.json --api-key ${{secrets.ASOJIDEV_NUGET_KEY}}

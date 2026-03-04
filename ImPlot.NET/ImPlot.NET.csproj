@@ -3,7 +3,7 @@
     <Description>A .NET wrapper for the ImPlot library.</Description>
     <AssemblyVersion>0.8.0</AssemblyVersion>
     <Authors>Eric Mellino, asojidev</Authors>
-    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net8.0;net10.0</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DebugType>portable</DebugType>
     <AssemblyName>ImPlot.NET</AssemblyName>
@@ -11,7 +11,7 @@
     <PackagePrereleaseIdentifier></PackagePrereleaseIdentifier>
     <PackageVersion>$(AssemblyVersion)$(PackagePrereleaseIdentifier)</PackageVersion>
     <PackageTags>ImPlot ImGui ImGui.NET Immediate Mode GUI</PackageTags>
-    <PackageProjectUrl>https://github.com/Tricky-Tanuki-Studios/ImGui.NET</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Tricky-Tanuki-Studios/TrickyTanukiStudios.ImGui.NET</PackageProjectUrl>
     <DocumentationFile Condition="'$(Configuration)' == 'Release'">$(OutputPath)\ImPlot.NET.xml</DocumentationFile>
     <RootNamespace>ImPlotNET</RootNamespace>
   </PropertyGroup>
