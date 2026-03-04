@@ -597,14 +597,14 @@ namespace ImGuiNET
         {
             ImGuiNative.ImDrawList_destroy((ImDrawList*)(NativePtr));
         }
-        public ImVec2_c GetClipRectMax()
+        public Vector2 GetClipRectMax()
         {
-            ImVec2_c ret = ImGuiNative.ImDrawList_GetClipRectMax((ImDrawList*)(NativePtr));
+            Vector2 ret = ImGuiNative.ImDrawList_GetClipRectMax((ImDrawList*)(NativePtr));
             return ret;
         }
-        public ImVec2_c GetClipRectMin()
+        public Vector2 GetClipRectMin()
         {
-            ImVec2_c ret = ImGuiNative.ImDrawList_GetClipRectMin((ImDrawList*)(NativePtr));
+            Vector2 ret = ImGuiNative.ImDrawList_GetClipRectMin((ImDrawList*)(NativePtr));
             return ret;
         }
         public void PathArcTo(Vector2 center, float radius, float a_min, float a_max)

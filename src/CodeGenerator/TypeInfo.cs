@@ -24,8 +24,10 @@ namespace CodeGenerator
             { "unsigned int", "uint" },
             { "ImVec2", "Vector2" },
             { "ImVec2_Simple", "Vector2" },
+            { "ImVec2_c", "Vector2" },
             { "ImVec3", "Vector3" },
             { "ImVec4", "Vector4" },
+            { "ImVec4_c", "Vector4" },
             { "ImWchar16", "ushort" }, //char is not blittable
             { "ImVec4_Simple", "Vector4" },
             { "ImColor_Simple", "ImColor" },
