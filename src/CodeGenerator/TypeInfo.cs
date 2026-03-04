@@ -59,6 +59,7 @@ namespace CodeGenerator
             { "ImPlotTransform", "IntPtr" },
             { "ImGuiKeyChord", "ImGuiKey" },
             { "ImGuiSelectionUserData", "long" },
+            { "ImColor_c", "ImColor*" }
         };
         
         public static readonly List<string> WellKnownEnums = new List<string>()

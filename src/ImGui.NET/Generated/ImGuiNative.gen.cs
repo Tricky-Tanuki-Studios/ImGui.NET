@@ -797,7 +797,7 @@ namespace ImGuiNET
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern void ImColor_destroy(ImColor* self);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
-        public static extern ImColor_c ImColor_HSV(float h, float s, float v, float a);
+        public static extern ImColor* ImColor_HSV(float h, float s, float v, float a);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern ImColor* ImColor_ImColor_Nil();
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]

@@ -15,14 +15,14 @@ There is obviously *a lot* more broken than what is shown, this is just what I w
   the generator.
   - Find a way to change all `ImVec2_c` -> `Vector2`? [or is it `ImVec2*`? probably not this.]
     - Affects the following, currently not generating type correctly
-      - [ ] [src/ImGui.NET/Generated/ImFont.gen.cs](src/ImGui.NET/Generated/ImFont.gen.cs)
-      - [ ] [src/ImGui.NET/Generated/ImDrawList.gen.cs](src/ImGui.NET/Generated/ImDrawList.gen.cs)
+      - [x] [src/ImGui.NET/Generated/ImFont.gen.cs](src/ImGui.NET/Generated/ImFont.gen.cs)
+      - [x] [src/ImGui.NET/Generated/ImDrawList.gen.cs](src/ImGui.NET/Generated/ImDrawList.gen.cs)
   - Find a way to change all `ImVec4_c` -> `Vector4`? [or is it `ImVec4*`? probably not this.]
     - Affects the following, currently not generating type correctly
-      - [ ] [src/ImGui.NET/Generated/ImColor.gen.cs](src/ImGui.NET/Generated/ImColor.gen.cs)
+      - [x] [src/ImGui.NET/Generated/ImColor.gen.cs](src/ImGui.NET/Generated/ImColor.gen.cs)
   - Find a way to change all `ImColor_c` -> `ImColor*`
     - Affects the following, currently not generating type correctly
-      - [ ] [src/ImGui.NET/Generated/ImColor.gen.cs](src/ImGui.NET/Generated/ImColor.gen.cs)
+      - [x] [src/ImGui.NET/Generated/ImColor.gen.cs](src/ImGui.NET/Generated/ImColor.gen.cs)
   - Find a way to change all `ImTextureRef_c` ->
     `???` [I.. don't exactly know exactly what type this should be.. uh. I
     *assume* `IntPtr`?]
