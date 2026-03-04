@@ -47,6 +47,7 @@ There is obviously *a lot* more broken than what is shown, this is just what I w
     - [ ] `ImFontAtlasRectId`
       - Spotted being used
         at [ImGui.NET/Generated/ImFontAtlas.gen.cs](ImGui.NET/Generated/ImFontAtlas.gen.cs)
+        - Target type might be `ImFontPtr` or `ImFont*`?
     - [ ] `ImFontLoader`
       - Spotted being used
         at [ImGui.NET/Generated/ImFontAtlas.gen.cs](ImGui.NET/Generated/ImFontAtlas.gen.cs)
