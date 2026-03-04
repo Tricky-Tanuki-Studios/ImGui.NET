@@ -88,13 +88,13 @@ namespace ImGuiNET
             _gd = gd;
             ResourceFactory factory = gd.ResourceFactory;
             _vertexBuffer = factory.CreateBuffer(new BufferDescription(10000, BufferUsage.VertexBuffer | BufferUsage.Dynamic));
-            _vertexBuffer.Name = "ImGui.NET Vertex Buffer";
+            _vertexBuffer.Name = "TrickyTanukiStudios.ImGui.NET Vertex Buffer";
             _indexBuffer = factory.CreateBuffer(new BufferDescription(2000, BufferUsage.IndexBuffer | BufferUsage.Dynamic));
-            _indexBuffer.Name = "ImGui.NET Index Buffer";
+            _indexBuffer.Name = "TrickyTanukiStudios.ImGui.NET Index Buffer";
             RecreateFontDeviceTexture(gd);
 
             _projMatrixBuffer = factory.CreateBuffer(new BufferDescription(64, BufferUsage.UniformBuffer | BufferUsage.Dynamic));
-            _projMatrixBuffer.Name = "ImGui.NET Projection Buffer";
+            _projMatrixBuffer.Name = "TrickyTanukiStudios.ImGui.NET Projection Buffer";
 
             byte[] vertexShaderBytes = LoadEmbeddedShaderCode(gd.ResourceFactory, "imgui-vertex", ShaderStages.Vertex);
             byte[] fragmentShaderBytes = LoadEmbeddedShaderCode(gd.ResourceFactory, "imgui-frag", ShaderStages.Fragment);
@@ -261,7 +261,7 @@ namespace ImGuiNET
                 1,
                 PixelFormat.R8_G8_B8_A8_UNorm,
                 TextureUsage.Sampled));
-            _fontTexture.Name = "ImGui.NET Font Texture";
+            _fontTexture.Name = "TrickyTanukiStudios.ImGui.NET Font Texture";
             gd.UpdateTexture(
                 _fontTexture,
                 pixels,

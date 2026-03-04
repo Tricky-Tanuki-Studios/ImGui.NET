@@ -10,7 +10,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\ImGui.NET\ImGui.NET.csproj" />
+        <ProjectReference Include="..\TrickyTanukiStudios.ImGui.NET\TrickyTanukiStudios.ImGui.NET.csproj" />
     </ItemGroup>
 
     <ItemGroup>
