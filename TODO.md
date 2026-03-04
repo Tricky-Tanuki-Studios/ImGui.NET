@@ -27,10 +27,11 @@ There is obviously *a lot* more broken than what is shown, this is just what I w
     `???` [I.. don't exactly know exactly what type this should be.. uh. I
     *assume* `IntPtr`?]
     - Affects the following, currently not generating type correctly
-      - [ ] [src/ImGui.NET/Generated/ImTextureData.gen.cs](src/ImGui.NET/Generated/ImTextureData.gen.cs)
+      - [x] [src/ImGui.NET/Generated/ImTextureData.gen.cs](src/ImGui.NET/Generated/ImTextureData.gen.cs)
     - Based off of the information found [here at Dear ImGui's FAQ.md, specifically the `What are 
   ImTextureID/ImTextureRef?` section](https://github.com/ocornut/imgui/blob/master/docs/FAQ.md#q-what-are-imtextureidimtextureref),
       `IntPtr` might be correct.
+      - `IntPtr` is[?] correct
   
 
 - Missing/broken types
