@@ -26,7 +26,7 @@ jobs:
       run: dotnet build -c Release --no-restore src
 
     - name: Build Packages
-      run: dotnet pack src/ImGui.NET -c Release --no-restore --no-build
+      run: dotnet pack ImGui.NET -c Release --no-restore --no-build
 
     - name: List Packages
       run: ls -l bin\Release\ImGui.NET\
@@ -36,7 +36,7 @@ jobs:
       shell: bash
       run: |
         echo "Running CodeGenerator"
-        bin/Release/CodeGenerator/net8.0/CodeGenerator.exe "src/ImGui.NET/Generated"
+        bin/Release/CodeGenerator/net8.0/CodeGenerator.exe "ImGui.NET/Generated"
         git status -s | findstr . && echo "ERROR: CodeGenerator is not executed, please execute it." && exit 1 || exit 0
 
     - name: Publish to nuget.org

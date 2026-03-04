@@ -33,9 +33,9 @@ curl -sfLo "$SCRIPT_ROOT/deps/cimgui/osx/cimgui.dylib" "https://github.com/Trick
 echo ""
 
 echo -n "Downloading definitions json file: "
-curl -sfLo "$SCRIPT_ROOT/src/CodeGenerator/definitions/cimgui/definitions.json" "https://github.com/Tricky-Tanuki-Studios/ImGui.NET-nativebuild/releases/download/$TAG/definitions.json"
+curl -sfLo "$SCRIPT_ROOT/CodeGenerator/definitions/cimgui/definitions.json" "https://github.com/Tricky-Tanuki-Studios/ImGui.NET-nativebuild/releases/download/$TAG/definitions.json"
 echo ""
 
 echo -n "Downloading structs and enums json file: "
-curl -sfLo "$SCRIPT_ROOT/src/CodeGenerator/definitions/cimgui/structs_and_enums.json" "https://github.com/Tricky-Tanuki-Studios/ImGui.NET-nativebuild/releases/download/$TAG/structs_and_enums.json"
+curl -sfLo "$SCRIPT_ROOT/CodeGenerator/definitions/cimgui/structs_and_enums.json" "https://github.com/Tricky-Tanuki-Studios/ImGui.NET-nativebuild/releases/download/$TAG/structs_and_enums.json"
 echo ""
