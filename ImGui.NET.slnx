@@ -7,9 +7,9 @@
   <Project Path="CodeGenerator/CodeGenerator.csproj" />
   <Project Path="ImGui.NET.SampleProgram.XNA/ImGui.NET.SampleProgram.XNA.csproj" />
   <Project Path="ImGui.NET.SampleProgram/ImGui.NET.SampleProgram.csproj" />
-  <Project Path="ImGui.NET/ImGui.NET.csproj" />
   <Project Path="ImGuizmo.NET/ImGuizmo.NET.csproj" />
   <Project Path="ImNodes.NET/ImNodes.NET.csproj" />
   <Project Path="ImPlot.NET/ImPlot.NET.csproj" />
   <Project Path="TestDotNetStandardLib/TestDotNetStandardLib.csproj" />
+  <Project Path="TrickyTanukiStudios.ImGui.NET/TrickyTanukiStudios.ImGui.NET.csproj" />
 </Solution>
