@@ -1353,7 +1353,7 @@ namespace ImGuiNET
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern IntPtr ImTextureData_GetTexID(ImTextureData* self);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
-        public static extern ImTextureRef_c ImTextureData_GetTexRef(ImTextureData* self);
+        public static extern IntPtr ImTextureData_GetTexRef(ImTextureData* self);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern ImTextureData* ImTextureData_ImTextureData();
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
