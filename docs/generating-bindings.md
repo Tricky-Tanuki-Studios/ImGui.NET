@@ -1,11 +1,13 @@
 # Generating Bindings
 
 > [!WARNING]
-> IN ABSOLUTELY *NO* CASE SHOULD YOU BE DIRECTLY WORKING IN THE GENERATED FILES OTHER THAN FIGURING OUT WHAT TYPES AND FUNCTIONS IT GENERATES, NEVER COMMIT ANY CODE THAT'S BEEN MANUALLY HUMAN EDITED IN `Generated/` DIRECTORIES.
->
-> THE GENERATOR *WILL* OVERWRITE ANY CHANGES YOU'VE MADE TO THE `Generated/` DIRECTORIES, YOU HAVE BEEN WARNED.
 > 
-> ANY CODE THERE CHANGED SHOULD BE TO THE GENERATOR ITSELF, IF SOMETHING BREAKS, FIX IT IN THE GENERATOR.
+> In absolutely *no* case should you be directly modifying/working in generated files, other than figuring out what types and functions it generates.
+> Never commit any code that's been manually human edited in any of the `Generated/` directories.
+> 
+> The Generator *will* overwrite any changes you've made to the `Generated/` directories, **you have been warned**
+> 
+> Any code that has been changed should be changed to the Generator itself, if something breaks, fix it in the Generator.
 
 TODO: Better instructions, this is just temp for my [asojidev] usage
 
